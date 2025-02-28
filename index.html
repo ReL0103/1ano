@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Romântico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Para você, minha Liloca</h1>
+            <p>Um espaço só nosso, cheio de amor e beleza</p>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="img/imagem1.jpeg" alt="Imagem 1">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem2.jpeg" alt="Imagem 2">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem3.jpeg" alt="Imagem 3">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem4.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="img/imagem5.jpeg" alt="Imagem 1">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem6.jpeg" alt="Imagem 2">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem7.jpeg" alt="Imagem 3">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem8.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="img/imagem9.jpeg" alt="Imagem 1">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem10.jpeg" alt="Imagem 2">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem11.jpeg" alt="Imagem 3">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem12.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="img/imagem13.jpeg" alt="Imagem 1">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem14.jpeg" alt="Imagem 2">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem15.jpeg" alt="Imagem 3">
+            </div>
+            <div class="image-item">
+                <img src="img/imagem16.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+        <h2>Nosso Amor</h2>
+        <div class="text-content">
+            <p> Que alegria é ter você na minha vida meu amor! Nesses 365 dias, 366 eu agradeci por ter você na minha vida! Meu bem, você é luz em minha vida! Você é a representação do cuidado de Deus comigo! Obrigado por cada palavra, cada momento com você, cada gesto! Sua família virou minha família, eu oro por vocês como se fosse pra mim! Obrigado por se permitir, por mesmo com os meus vacilos me perdoar e me fazer entender e ser um homem melhor! Homem esse que você ajudou formar, esse caráter que você faz parte! Obrigado por cada ensinamento, por ser você! Minha liloca, minha nutri, minha flamenguista, minha neném, minha companheira, minha princesa, meu amor, vida! Eu te amo, eu te quero, eu te desejo, eu te admiro! Meu amor! Meu orgulho! Minha mulher maravilhosa! Minha incrível! Seu Renato te ama muito! 💙</p>
+            <p> Obrigado pelo melhor ano da minha vida! Obrigado meu Deus por me proporcionar viver isso, graças a Ele que estou onde estou, e vivo o melhor dEle pra minha vida, e eu tenho certeza que o melhor é ao seu lado. Como minha mãe disse, eu encontrei a minha esposa! Que em nome de Jesus continuamos rompendo em fé, tendo sabedoria e maturidade! Que Deus continue sendo o centro de tudo em nossas vidas porque graças a Ele que estamos vivendo isso! Obrigado meu amor! Muito obrigado! Obrigado por ser essa mulher de Deus que me ensina, me ama, me faz muito feliz. Cada dia ao seu lado é único, é maravilhoso, é indescritível. Tenho certeza que vamos evoluir muito ainda e que juntos somos mais fortes!💙💙</p>
+        </div>
+        
+        <div class="counter-container">
+            <h2>Tempo Juntos</h2>
+            <div id="counter"></div>
+        </div>
+
+        <div class="video-container">
+            <h2>Nossa música</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ghFocBG78FA?si=_bRgwU9799gLRC9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; De 2024 para até a volta dEle</p>
+    </footer>
+
+    <script>
+        function updateCounter() {
+            const startDate = new Date('2024-03-01T00:00:00');
+            const now = new Date();
+            const diff = now - startDate;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            document.getElementById('counter').textContent = `Juntos há ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos!`;
+        }
+        setInterval(updateCounter, 1000);
+        updateCounter();
+    </script>
+</body>
+</html>
